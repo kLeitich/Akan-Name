@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url(images/tim-mossholder-IQJbbw72PZc-unsplash.jpg);
+    background-size: 100%;
+    /* opacity: 0.7; */
+
+}
+.nav{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 2%;
+}
+.logo{
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    width: 50%;
+}
+.navmenu{
+    width: 50%;
+    padding-left: 15%;
+}
+.navmenu a{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 5%;
+    text-decoration: none;
+}
