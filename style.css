@@ -49,8 +49,10 @@ body{
 }
 
 .footer{
-    
-    color: white;
 
-    
+    color: white;
+}
+
+.copyright{
+    display: flex;
 }
