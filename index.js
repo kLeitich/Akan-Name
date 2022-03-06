@@ -11,9 +11,12 @@
     
 // }
 var nameError = document.getElementById('name-error');
-var dateError = document.getElementById('date-error');
-var monthError = document.getElementById('month-error');
-var yearError = document.getElementById('year-error');
+var date = document.getElementById('bDate');
+var gender = document.getElementById('gender').value;
+var fName = document.getElementById('fName').value;
+console.log(date,gender,fName)
+
+
 
 function validateName(){
     const fName = document.getElementById('fName').value;
@@ -31,21 +34,10 @@ function validateName(){
     nameError.innerHTML='valid';
     return true;
 }
-function validateDate(){
-    const date = document.getElementById('date').value;
 
-    if (date.length == 0){
-        dateError.innerHTML='Date is required';
-        return false;
-    }
-    if ( date.length <=1){
-        dateError.innerHTML='Date is two number only';
-        return false;
-    }
-    if (!date.match(/[0-31]/)){
-        dateError.innerHTML='write a date between 0-31';
-        return false;
-    }
-    nameError.innerHTML='valid';
-    return true;
-}
+
+var akanMale =["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "kaw", "Kofi", "Kwame"];
+var akanFemale =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+var Akan;
+
