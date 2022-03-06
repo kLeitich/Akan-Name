@@ -31,12 +31,24 @@ body{
     margin-right: 5%;
     text-decoration: none;
 }
-
 .form{
     display: flex;
-    float: left;
-    /* color: white; */
+    
+}
+.txt{
     font-size: xx-large;
+    
+}
+form button{
+    background: #141a34;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
 }
 .pic{
     padding: 2%;
@@ -48,11 +60,15 @@ body{
     width: 50%;
 }
 
-.footer{
 
+.input span{
+    font-size: x-small;
+    color: red;
+    position: relative;
+}
+
+
+.footer{
     color: white;
 }
 
-.copyright{
-    display: flex;
-}
