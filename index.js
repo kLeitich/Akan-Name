@@ -1,20 +1,8 @@
-// function takeValue(){
-//     const name = document.getElementById("name").value;
-//     const date = document.getElementById("date").value;
-//     const month = document.getElementById("month").value;
-//     const year = document.getElementById("year").value;
-    
-//     console.log(name)
-//     console.log(date)
-//     console.log(month)
-//     console.log(year)
-    
-// }
-var nameError = document.getElementById('name-error');
-var date = document.getElementById('bDate');
-var gender = document.getElementById('gender').value;
-var fName = document.getElementById('fName').value;
-console.log(date,gender,fName)
+
+const nameError = document.getElementById('name-error');
+const bDate = document.getElementById('bDate').value;
+const gender = document.getElementById('gender').value;
+const fName = document.getElementById('fName').value;
 
 
 
@@ -41,3 +29,38 @@ var akanFemale =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 var Akan;
 
+getAkan.addEventListener("submit", (g)=>
+    
+    
+
+    {var newDate = new date(bDate)
+    var day = newDate.getDay()
+    if (bDate==""){
+        alert("Enter your birthday correctly");
+    }
+    if (gender==""){
+        alert("Choose your gender");
+    }
+    else{
+        if (gender===Male){
+            Container.innerHTML='fname'+" your Akan Name is ${akanMale[day]}";
+        }else{
+            Container.innerHTML='fname'+" your Akan Name is ${akanFemale[day]}";
+        }
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
