@@ -19,8 +19,6 @@ function validateName(){
 
 
 
-
-
 const submitBtn = document.getElementById("getAkan");
 
 submitBtn.addEventListener("click",(e)=>{
@@ -38,9 +36,9 @@ submitBtn.addEventListener("click",(e)=>{
         alert("Choose your gender");
     }else{
         if(myGender=="male"){
-            akanName.innerHTML = `${fName} Your khan name is ${mNames[day]}`
+            akanName.innerHTML = `Your khan name is ${mNames[day]}`
         }else{
-            akanName.innerHTML = `${fName} Your khan name is ${fNames[day]}`
+            akanName.innerHTML = `Your khan name is ${fNames[day]}`
         }
  
     }
