@@ -39,7 +39,7 @@ body{
     font-size: xx-large;
     
 }
-form button{
+#getAkan{
     background: #141a34;
     color: white;
     border-radius: 4px;
@@ -59,11 +59,8 @@ form button{
     padding: 2% 8% 8% 0;
     width: 50%;
 }
-.input1{
-    display: none;
-}
 
-.input span{
+#name-error{
     font-size: x-small;
     color: red;
     position: relative;

@@ -32,33 +32,26 @@
                 <br>
             </div>
             <div class="container">
-                <form action="submit" id="userform" onclick="submit">
+                <form name="userform">
               
-                    <div class="input">
+                    <div class="input1">
                       <label>First Name</label><br>
                       <input type="text" placeholder="Enter your  first name" id="fName" onkeyup="validateName()">
                       <span id="name-error"></span>
                     </div>
-              
-                    <div class="input">
-                      <label>Date of birth</label>
-                      <br>
-                      <input type="date" id="b-Date" name="bDate">
-                    </div>
-              
-                    <div class="input" id="g-Gender" onclick="validateGender()">
-                     <p>Gender</p>
-                     <input type="radio"  name="gender" value="Male">
-                     <label for="html">Male</label>
-                     <input type="radio"  name="gender" value="Female">
-                     <label for="html">Female</label>
-                    </div>   
-              
-                  <input id="getAkan" type="submit" value="submit" onclick="generate()">
+                    <label for="dob"><B>Date of Birth:</B></label><br>
+                    <input type="date" id="dob" name="dob" ><br>
+                    <label for="gender">Gender</label><br>
+                    <select  id="gender">
+                        <option name="gender" value="">select</option>
+                        <option  name="gender" value="female">Female</option>
+                        <option name="gender" value="male">Male</option>
+                    </select><br>
+                    <input type="submit" id="getAkan" value="Get Akan Name" >
                  
                 </form>
             </div>
-            <div class="akanName"></div>
+            <div id="akanName"></div>
         </div>
 
        
