@@ -32,7 +32,7 @@
                 <br>
             </div>
             <div class="container">
-                <form action="submit" id="userform">
+                <form action="submit" id="userform" onclick="submit">
               
                     <div class="input">
                       <label>First Name</label><br>
@@ -46,7 +46,7 @@
                       <input type="date" id="b-Date" name="bDate">
                     </div>
               
-                    <div class="input" id="g-Gender">
+                    <div class="input" id="g-Gender" onclick="validateGender()">
                      <p>Gender</p>
                      <input type="radio"  name="gender" value="Male">
                      <label for="html">Male</label>
@@ -54,7 +54,7 @@
                      <label for="html">Female</label>
                     </div>   
               
-                  <button id="getAkan" type="submit" onclick="generate()"> Get Akan Name</button>
+                  <input id="getAkan" type="submit" value="submit" onclick="generate()">
                  
                 </form>
             </div>

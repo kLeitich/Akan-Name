@@ -59,7 +59,9 @@ form button{
     padding: 2% 8% 8% 0;
     width: 50%;
 }
-
+.input1{
+    display: none;
+}
 
 .input span{
     font-size: x-small;

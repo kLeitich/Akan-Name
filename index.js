@@ -1,4 +1,5 @@
 const nameError = document.getElementById('name-error');
+const getAkan = document.getElementById("getAkan");
 
 function validateName(){
     const fName = document.getElementById('fName').value;
@@ -15,37 +16,11 @@ function validateName(){
         return true;
 
 }   
-getAkan.addEventListener("submit",function generate(a,b){
-    // e.preventDefault();
-    const userData = document.userform.value;
-    var bDate = userData.get("b-Date")
-    var gender =userData.get("g-Gender")
-    const akanName = document.getElementById("akanName");
-    // const bDate = document.getElementById("bDate").value;
-    
-    var newDate = new Date(bDate); 
-    var Day = bDate.getDay()
-    
-    var akanFemale = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var akanMale = ["Kwasi", "Kwadwo","Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
-    if(bDate==""){
-        alert ("Input your date of birth");
-        
-    }else if(gender==""){
-        alert("Select one gender");
-    }else{
-        if(gender=="Male"){
-            akanName.innerHTML = `Your khan name is ${akanMale[Day]}`
-        }else{
-            akanName.innerHTML = `Your khan name is ${akanFemale[Day]}`
-        }
- 
-    }
-});
-
-
-
+getAkan.addEventListener("click",function bday(){
+    const bDate = document.getElementById('b-Date').value;
+    console.log(bDate)
+})
 
 
 
